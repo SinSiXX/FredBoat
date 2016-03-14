@@ -11,6 +11,7 @@ import fredboat.command.HelpCommand;
 import fredboat.command.JokeCommand;
 import fredboat.command.LeetCommand;
 import fredboat.command.LuaCommand;
+import fredboat.command.RestartCommand;
 import fredboat.command.SayCommand;
 import fredboat.command.TestCommand;
 import fredboat.command.UptimeCommand;
@@ -109,5 +110,6 @@ public class FredBoat {
         CommandManager.registerAlias("l33t", "leet");
         CommandManager.registerCommand("troll", new AudioTrollCommand());
         CommandManager.registerCommand("endtroll", new EndTrollCommand());
+        CommandManager.registerCommand("restart", new RestartCommand());
     }
 }

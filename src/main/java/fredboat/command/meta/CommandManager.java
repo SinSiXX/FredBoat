@@ -16,10 +16,12 @@ public class CommandManager {
     public static int commandsExecuted = 0;
 
     public static void registerCommand(String name, ICommand cmd) {
+        System.out.println("Registered new command " + name );
         commands.put(name, cmd);
     }
     
     public static void registerAlias(String aliasName, String cmdName) {
+        System.out.println("Registered new alias " + aliasName + " for " + cmdName);
         commands.put(aliasName, commands.get(cmdName));
     }
 
